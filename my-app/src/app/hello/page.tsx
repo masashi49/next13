@@ -1,17 +1,16 @@
-"use client"
+'use client';
 
-import Test from "../components/test"
+import { TextComponent } from '../components/TextComponent';
 
 export default function Hollo() {
-
   function handleClick() {
-    console.log(111);
+    console.log(1);
   }
 
   return (
     <div>
       <p>this is hello</p>
-      <Test name="名前ですよ" handleClick={handleClick} />
+      <TextComponent name='名前ですよ' handleClick={handleClick} />
     </div>
-  )
+  );
 }
